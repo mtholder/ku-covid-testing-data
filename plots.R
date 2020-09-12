@@ -80,8 +80,8 @@ swLowerCILFS[swAllTestsLFS<1] = 0
 # barplot(allTests)
 png("images/number-of-tests-over-time.png")
 plot(swDates, swTests, type="l",
-     main="# Entry+Prevalence tests per day (Mean over 7-day sliding window) by date",
-     ylab="mean # of tests in previous 7 days",
+     main="Entry+Prevalence tests / day (Mean of 7-day window) by date",
+     ylab="mean # of tests/day in previous 7 days",
      xlab="Last date in the 7-day window", ylim=c(0,2000));
 abline(h=seq(00, 2000, by=100), lty=3, col="grey");
 abline(h=seq(0, 2000, by=500), lty=1, col="grey");
