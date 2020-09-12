@@ -19,7 +19,7 @@ sum.over.window <- function(nc, ncwin) {
 #   yes, yes, I know R programmers don't write loops, I'm not a good R programmer...
 mean.over.window <- function(nc, ncwin) {
   tdwnc <- sum.over.window(nc, ncwin);
-  return(tdwnc);
+  return(tdwnc/ncwin);
 }
 
 ratio.or.zero <- function(num, denom) {
@@ -79,8 +79,8 @@ swLowerCILFS[swAllTestsLFS<1] = 0
 
 # barplot(allTests)
 png("images/number-of-tests-over-time.png")
-plot(swDates, swTests/win.len, type="l",
-     main="Mean # of Entry+Prevalence tests (7-day sliding window) by date",
+plot(swDates, swTests, type="l",
+     main="# Entry+Prevalence tests per day (Mean over 7-day sliding window) by date",
      ylab="mean # of tests in previous 7 days",
      xlab="Last date in the 7-day window", ylim=c(0,2000));
 abline(h=seq(00, 2000, by=100), lty=3, col="grey");
