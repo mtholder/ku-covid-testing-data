@@ -6,6 +6,7 @@
   * Be aware the this repository is *not* a primary (or even a vetted) source for data on SARS-CoV-2 at KU. The data in this repository is read from the figures published on that site. Errors can occur in that transcription. Treat the data at https://protect.ku.edu/ as the canonical source of information.
   * I ([Mark Holder](http://orcid.org/0000-0001-5575-0536)) am not part of KU's [Pandemic Medical Advisory Team](https://protect.ku.edu/pmat), and I do not intend this repository to be interpreted as a official source of information for KU. I created the repository because, I am interested in test-positivity rates over time. Because I am a strong proponent of open science, I am making the CSV files and scripts available here.
   * See the "Known issues" section below.
+  * I am not really sure whether or not the prevalence testing (discussed below) is a random sampling procedure. I don't know the details. If it is not, then the test positivity rates may be biased estimates.
 
 
 ## Background
