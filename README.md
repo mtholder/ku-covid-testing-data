@@ -1,9 +1,10 @@
 # ku-covid-testing-data
 
-**Please:**
+*Caveats* **(Please read):**
 
   * See https://protect.ku.edu/ for information about the University of Kansas' response to the COVID-19 pandemic.
   * Be aware the this repository is *not* a primary (or even a vetted) source for data on SARS-CoV-2 at KU. The data in this repository is read from the figures published on that site. Errors can occur in that transcription. Treat the data at https://protect.ku.edu/ as the canonical source of information.
+  * I ([Mark Holder](http://orcid.org/0000-0001-5575-0536)) am not part of KU's [Pandemic Medical Advisory Team](https://protect.ku.edu/pmat), and I do not intend this repository to be interpreted as a official source of information for KU. I created the repository because, I am interested in test-positivity rates over time. Because I am a strong proponent of open science, I am making the CSV files and scripts available here.
   * See the "Known issues" section below.
 
 
@@ -61,8 +62,9 @@ This repository contains a UTF-8-encoded "csv" file with tab as separators. The 
 
 ## Known issues
 
-For the Aug 1 - Sept 10 check, the approximations I read from the bar charts indicated 25,034 negative tests, but the pdf on the dashboard's summary stats report 25,035 negative tests. So my pixel reading of at least on of the bar charts in that reports negative tests visualization was probably a little off. That was the hardest chart to read accurately, because the tests-represented-by-each-pixel calibration was the most extreme of all of the plots (unsurprisingly, given the large numbers depicted in that graph). 
+  * For the Aug 1 - Sept 10 check, the approximations I read from the bar charts indicated 25,034 negative tests, but the pdf on the dashboard's summary stats report 25,035 negative tests. So my pixel reading of at least on of the bar charts in that reports negative tests visualization was probably a little off. That was the hardest chart to read accurately, because the tests-represented-by-each-pixel calibration was the most extreme of all of the plots (unsurprisingly, given the large numbers depicted in that graph). 
 
+  * Note that the Total Tests number in the dashboard reports is greater than the sum of "Neg. Results" and "Pos. Results". In checking by approximations of the data, I used the "Neg. Results" and "Pos. Results" summaries.
 
 Note that (unlike [the previous entry testing data](https://protect.ku.edu/covid-19-test-reporting)), the data in the dashboard reports is list as "by Collection Date". I am interpreting "Collection Date" as the sample collection date, rather than the day that the data was reported.
 If that is correct, we should not expect perfect agreement between the numbers in this repository and the previous "by week" reporting; and we do see some discrepancies.
