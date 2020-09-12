@@ -60,6 +60,13 @@ This repository contains a UTF-8-encoded "csv" file with tab as separators. The 
    9. PosTestLStudents - the number of positive tests collected from Lawrence Students on that day
 
 
+## Plots
+Currently the `plots.R` script is used to create to 2 plots:
+
+![plot of number of tests by time](https://raw.githubusercontent.com/mtholder/ku-covid-testing-data/master/images/number-of-tests-over-time.png)
+
+![plot of test positivity over time](https://raw.githubusercontent.com/mtholder/ku-covid-testing-data/master/images/test-positivity-over-time.png)
+
 ## Known issues
 
   * For the Aug 1 - Sept 10 check, the approximations I read from the bar charts indicated 25,034 negative tests, but the pdf on the dashboard's summary stats report 25,035 negative tests. So my pixel reading of at least on of the bar charts in that reports negative tests visualization was probably a little off. That was the hardest chart to read accurately, because the tests-represented-by-each-pixel calibration was the most extreme of all of the plots (unsurprisingly, given the large numbers depicted in that graph). 
