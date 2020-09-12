@@ -1,7 +1,7 @@
 kucovid <- read.csv("negative-positive-tests-by-day.csv", header=TRUE, sep="\t", strip.white=TRUE);
 kucovid$Date <- as.Date(kucovid$Date , "%m/%d/%y")
 
-# function that returns an array of the sliding-window means over nc (window size = ncwin)
+# function that returns an array of the sliding-window sums over nc (window size = ncwin)
 #   yes, yes, I know R programmers don't write loops, I'm not a good R programmer...
 sum.over.window <- function(nc, ncwin) {
   tdwnc = c()
@@ -82,9 +82,9 @@ png("images/number-of-tests-over-time.png")
 plot(swDates, swTests/win.len, type="l",
      main="Mean # of Entry+Prevalence tests (7-day sliding window) by date",
      ylab="mean # of tests in previous 7 days",
-     xlab="Last date in the 7-day window");
-abline(h=seq(100, 2000, by=100), lty=3, col="grey");
-abline(h=seq(500, 2000, by=500), lty=1, col="grey");
+     xlab="Last date in the 7-day window", ylim=c(0,2000));
+abline(h=seq(00, 2000, by=100), lty=3, col="grey");
+abline(h=seq(0, 2000, by=500), lty=1, col="grey");
 dev.off()
 
 png("images/test-positivity-over-time.png")
