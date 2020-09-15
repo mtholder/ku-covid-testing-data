@@ -19,8 +19,9 @@ Starting on Friday 11 September, KU moved to publish reports at https://protect.
 
 Currently the reports are for the periods:
   * [August 1 to Sept 10](https://protect.ku.edu/sites/protect/files/documents/Dashboard/COVID-19_Dashboard_Aug1toSept10.pdf)
-  * [August 3 to Sept 9](https://protect.ku.edu/sites/protect/files/documents/Dashboard/COVID-19_Dashboard_Sept3toSept9.pdf)
-
+  * [Sept 3 to Sept 9](https://protect.ku.edu/sites/protect/files/documents/Dashboard/COVID-19_Dashboard_Sept3toSept9.pdf)
+  * [August 1 to Sept 13](https://protect.ku.edu/sites/protect/files/documents/Dashboard/COVID-19_Dashboard_Aug1toSept13.pdf)
+  * [Sept 7 to Sept 13](https://protect.ku.edu/sites/protect/files/documents/Dashboard/COVID-19_Dashboard_Sept7toSept13.pdf)
 Neither report traces the test-positivity percentage over time, which I was interested in.
 For a time-series of test-positivity rates to be easily interpreted as a proxy of the campus-wide prevalence of SARS-CoV-2 infections, it is important to either have detailed knowledge of the biases associated with targeted testing, or to focus on the entry tests and "randomized prevalence testing."
 Thus, this repository contains only data from the "Entry & Prevalence Testing" page of the Dashboard reports (that is page 2 in each of the reports).
@@ -69,6 +70,8 @@ Currently the `plots.R` script is used to create to 2 plots:
 ![plot of test positivity over time](https://raw.githubusercontent.com/mtholder/ku-covid-testing-data/master/images/test-positivity-over-time.png)
 
 ## Known issues
+
+**Note**: following the Tuesday, Sept 15 update, I updated the counts covered in the smaller report (Sept 7-13), but I did **not** reread older dates from the comprehensive report. There was one labelled bar (for 08/26/2020) in the comprehensive report that changed. So that was updated. Measuring all of the bars takes quite a bit of time, hopefully most of the earlier dates are stable. But those numbers should be re-measured at some point if KU does not release the results in a text form. 
 
   * For the Aug 1 - Sept 10 check, the approximations I read from the bar charts indicated 25,034 negative tests, but the pdf on the dashboard's summary stats report 25,035 negative tests. So my pixel reading of at least on of the bar charts in that reports negative tests visualization was probably a little off. That was the hardest chart to read accurately, because the tests-represented-by-each-pixel calibration was the most extreme of all of the plots (unsurprisingly, given the large numbers depicted in that graph). 
 

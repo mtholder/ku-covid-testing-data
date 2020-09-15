@@ -77,7 +77,7 @@ swLowerCILStudents[swLowerCILStudents<0] = 0
 swUpperCILFS[swAllTestsLFS<1] = 1
 swLowerCILFS[swAllTestsLFS<1] = 0
 
-# barplot(allTests)
+barplot(allTests)
 png("images/number-of-tests-over-time.png")
 plot(swDates, swTests, type="l",
      main="Entry+Prevalence tests / day (Mean of 7-day window) by date",
