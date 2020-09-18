@@ -71,7 +71,7 @@ This repository contains a UTF-8-encoded "csv" file with tab as separators. The 
 ## Plots
 Currently the `plots.R` script is used to create to 2 plots:
 
-![plot of number of tests by time](https://raw.githubusercontent.com/mtholder/ku-covid-testing-data/master/images/number-of-tests-nonath-over-time.png)
+![plot of number of tests by time](https://raw.githubusercontent.com/mtholder/ku-covid-testing-data/master/images/number-of-nonath-tests-over-time.png)
 
 As mentioned above in the "update on this point", it is not clear how to interpret the following graph of positivity rates because it is very unclear what the population being sampled (since we don't know what fraction of the tests are from contact tracing), but the test positivity over time is:
 
