@@ -57,6 +57,8 @@ swPosRateAll = ratio.or.zero(swPosTestsAll, swAllTestsAll);
 swPosRateLFS = ratio.or.zero(swPosTestsLFS, swAllTestsLFS);
 swPosRateLStudents = ratio.or.zero(swPosTestsLStudents, swAllTestsLStudents);
 
+swLawrTests = mean.over.window(allTestsLFS+allTestsLStudents, win.len)
+
 # Agresti-Coull confidence intervals on positivity proportions for windows
 swPPrimeLFS <- (swPosTestsLFS + 2)/(swAllTestsLFS + 4)
 swPPrimeLStudents <- (swPosTestsLStudents + 2)/(swAllTestsLStudents + 4)
@@ -81,6 +83,17 @@ barplot(allTests)
 png("images/number-of-tests-over-time.png")
 plot(swDates, swTests, type="l",
      main="Entry+Prevalence tests / day (Mean of 7-day window) by date",
+     ylab="mean # of tests/day in previous 7 days",
+     xlab="Last date in the 7-day window", ylim=c(0,2000));
+abline(h=seq(00, 2000, by=100), lty=3, col="grey");
+abline(h=seq(0, 2000, by=500), lty=1, col="grey");
+dev.off()
+
+
+barplot(allTests)
+png("images/number-of-nonath-tests-over-time.png")
+plot(swDates, swLawrTests, type="l",
+     main="Lawr. tests (excluding Athl.) / day (Mean of 7-day window) by date",
      ylab="mean # of tests/day in previous 7 days",
      xlab="Last date in the 7-day window", ylim=c(0,2000));
 abline(h=seq(00, 2000, by=100), lty=3, col="grey");

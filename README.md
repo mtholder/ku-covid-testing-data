@@ -21,9 +21,12 @@ Starting on Friday 11 September, KU moved to publish reports at https://protect.
 
 Currently the reports are for the periods:
   * [August 1 to Sept 10](https://protect.ku.edu/sites/protect/files/documents/Dashboard/COVID-19_Dashboard_Aug1toSept10.pdf)
-  * [Sept 3 to Sept 9](https://protect.ku.edu/sites/protect/files/documents/Dashboard/COVID-19_Dashboard_Sept3toSept9.pdf)
   * [August 1 to Sept 13](https://protect.ku.edu/sites/protect/files/documents/Dashboard/COVID-19_Dashboard_Aug1toSept13.pdf)
+  * [August 1 to Sept 16](https://protect.ku.edu/sites/protect/files/documents/Dashboard/COVID-19_Dashboard_Aug1toSept16.pdf)
+  * [Sept 3 to Sept 9](https://protect.ku.edu/sites/protect/files/documents/Dashboard/COVID-19_Dashboard_Sept3toSept9.pdf)
   * [Sept 7 to Sept 13](https://protect.ku.edu/sites/protect/files/documents/Dashboard/COVID-19_Dashboard_Sept7toSept13.pdf)
+  * [Sept 7 to Sept 13](https://protect.ku.edu/sites/protect/files/documents/Dashboard/COVID-19_Dashboard_Sept7toSept13.pdf)
+   * [Sept 10 to Sept 16](https://protect.ku.edu/sites/protect/files/documents/Dashboard/COVID-19_Dashboard_Sept10toSept16.pdf)
  
 None of the reports trace the test-positivity percentage over time, which I was interested in.
 For a time-series of test-positivity rates to be easily interpreted as a proxy of the campus-wide prevalence of SARS-CoV-2 infections, it is important to either have detailed knowledge of the biases associated with targeted testing, or to focus on the entry tests and "randomized prevalence testing."
@@ -68,7 +71,9 @@ This repository contains a UTF-8-encoded "csv" file with tab as separators. The 
 ## Plots
 Currently the `plots.R` script is used to create to 2 plots:
 
-![plot of number of tests by time](https://raw.githubusercontent.com/mtholder/ku-covid-testing-data/master/images/number-of-tests-over-time.png)
+![plot of number of tests by time](https://raw.githubusercontent.com/mtholder/ku-covid-testing-data/master/images/number-of-tests-nonath-over-time.png)
+
+As mentioned above in the "update on this point", it is not clear how to interpret the following graph of positivity rates because it is very unclear what the population being sampled (since we don't know what fraction of the tests are from contact tracing), but the test positivity over time is:
 
 ![plot of test positivity over time](https://raw.githubusercontent.com/mtholder/ku-covid-testing-data/master/images/test-positivity-over-time.png)
 
