@@ -31,6 +31,8 @@ Currently the reports are for the periods:
    * [Sept 10 to Sept 16](https://protect.ku.edu/sites/protect/files/documents/Dashboard/COVID-19_Dashboard_Sept10toSept16.pdf)
    * [Sept 14 to Sept 20](https://protect.ku.edu/sites/protect/files/documents/Dashboard/COVID-19_Dashboard_Sept14toSept20.pdf)
    * [Sept 17 to Sept 23](https://protect.ku.edu/sites/protect/files/documents/Dashboard/COVID-19_Dashboard_Sept17toSept23.pdf)
+   * [Sept 21 to Sept 27](https://protect.ku.edu/sites/protect/files/documents/Dashboard/COVID-19_Dashboard_Sept21toSept27.pdf)
+   * [Sept 24 to Sept 30](https://protect.ku.edu/sites/protect/files/documents/Dashboard/COVID-19_Dashboard_Sept24toSept30.pdf)
  
 None of the reports trace the test-positivity percentage over time, which I was interested in.
 For a time-series of test-positivity rates to be easily interpreted as a proxy of the campus-wide prevalence of SARS-CoV-2 infections, it is important to either have detailed knowledge of the biases associated with targeted testing, or to focus on the entry tests and "randomized prevalence testing."
